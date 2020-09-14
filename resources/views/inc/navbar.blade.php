@@ -27,7 +27,7 @@
           </div>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
           <a href="/posts/create" class="nav-link">Add Product</a>
         </li>
