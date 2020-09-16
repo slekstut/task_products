@@ -47,9 +47,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-
-              {{-- <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav"> --}}
                   <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                   </li>
@@ -71,14 +68,6 @@
                       <a class="dropdown-item" href="#">Horror</a>
                     </div>
                   </li>
-                </ul>
-                <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a href="/posts/create" class="nav-link">Add Product</a>
-                  </li>
-                </ul>
-              {{-- </div> --}}
-
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -96,10 +85,12 @@
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
-
+                          {{ Auth::user()->name }}
+                      </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/home">
+                                Your Homepage
+                            </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
